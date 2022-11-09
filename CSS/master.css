@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Bai Jamjuree', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px){
+  .container{
+      width: 750px;
+  }
+}
+/* Meduim */
+@media (min-width: 992px){
+  .container{
+      width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px){
+  .container{
+      width: 1170px;
+  }
+}
+main{
+
+}
+/** Start Header */
+header{
+  width: 100%;
+  background: url(../images/bg-header-desktop.png) no-repeat;
+  background-size: contain;
+}
+header .container{
+  padding-top: 187px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 97vh;
+}
+header .icon{
+  margin-bottom: 50px;
+}
+header .main-heading{
+  text-align: center;
+  margin-bottom: 50px;
+  width: 55%;
+}
+header .main-heading h1{
+  color: var(--Dark-Grayish-Blue);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+header .main-heading p{
+  font-size: 18px;
+  color: var(--Grayish-Blue);
+}
+/** End Header */
+/** Start Component */
+.heading{
+  text-align: center;
+  width: 45%;
+  margin: auto auto 100px auto;
+}
+.heading h2{
+  font-size: 35px;
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 20px;
+}
+.heading p{
+  font-size: 18px;
+  color: var(--Grayish-Blue);
+}
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-weight: 600;
+}
+.form a{
+  display: block;
+  color: white;
+  padding: 20px 35px;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+.form .ios{
+  background-color: var(--Strong-Cyan);
+  box-shadow: 0 2px 2px hsl(171deg 67% 25%);
+}
+.form .ios:hover{
+  background-color: hsl(171, 52%, 58%);
+}
+.form .mac{
+  background-color: var(--Light-Blue);
+  box-shadow: 0px 2px 2px hsl(233deg 48% 24%);
+}
+.form .mac:hover{
+  background-color: hsl(233, 100%, 77%);
+}
+/** End Component */
+/** Start Section-1 */
+.section-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+.section-1 .pic img{
+  margin-left: -70px;
+  width: 830px;
+}
+.section-1 .list{
+  margin-bottom: 50px;
+}
+.section-1 .list ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 80px;
+}
+.section-1 .list ul li{
+  width: 60%;
+}
+.section-1 .list ul li h3{
+  font-size: 25px;
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 10px;
+}
+.section-1 .list ul li p{
+  font-size: 18px;
+  color: var(--Grayish-Blue);
+}
+/** End Section-1 */
+/** Start Section-2 */
+.section-2{
+  margin-top: 150px;
+}
+.section-2 .pic {
+  text-align: center;
+}
+/** End Section-2 */
+/** Start Section-3 */
+.section-3{
+  margin-top: 100px;
+}
+.section-3 .heading{
+  margin: auto auto 50px auto;
+}
+.section-3 .workflow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-3 .workflow .box{
+  text-align: center;
+  width: 31%;
+  margin: auto;
+}
+.section-3 .workflow .box:first-of-type{
+  margin-top: 20px;
+}
+.section-3 .workflow .box img{
+  margin-bottom: 40px;
+}
+.section-3 .workflow .box h3{
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+.section-3 .workflow .box p{
+  color: var(--Grayish-Blue);
+  line-height: 1.7;
+}
+.section-3 .company-logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+/** End Section-3 */
+/** Start Section-4 */
+.section-4{
+  margin-top: 150px;
+}
+.section-4 .heading{
+  margin-bottom: 50px;
+  width: 60%;
+}
+/** End Section-4 */
+/** Start Footer */
+footer{
+  height: 180px;
+  margin-top: 150px;
+  background-color: hsl(220, 18%, 97%);
+  padding: 50px 0;
+}
+footer .container{
+  display: flex;
+  align-items: center;
+}
+footer .icon img{
+  width: 50px;
+  text-align: left;
+  margin-right: 170px;
+}
+footer .links{
+  margin-right: 300px;
+}
+footer .links ul{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 50px;
+  max-width: 400px;
+}
+footer .links ul li{
+
+}
+footer .links ul li a{
+  color: var(--Dark-Grayish-Blue);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+footer .links ul li a:hover{
+  color: var(--Strong-Cyan);
+}
+footer .social{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-basis: auto;
+}
+/** End Footer */
